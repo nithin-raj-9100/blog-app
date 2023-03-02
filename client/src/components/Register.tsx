@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import axios from 'axios';
 
@@ -17,9 +16,6 @@ const Register = () => {
 			.then(res => {
 				console.log(res);
 				console.log(res.data);
-			})
-			.finally(() => {
-				console.log('finally');
 			});
 
 		setEmail('');
