@@ -4,14 +4,14 @@ import { Schema } from 'mongoose';
 const UserSchema = new Schema({
 	email: {
 		type: String,
-		// unique: true,
-		// required: true,
-		// min: 4,
+		unique: true,
+		required: true,
+		min: 4,
 	},
 	password: {
 		type: String,
-		// required: true,
-		// min: 6,
+		required: true,
+		min: 6,
 	},
 });
 
